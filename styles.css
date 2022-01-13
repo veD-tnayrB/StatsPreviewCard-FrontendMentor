@@ -1,0 +1,288 @@
+:root {
+    --VeryDarkBlue-Main: hsl(233, 47%, 7%);
+    --DarkDesaturatedBlue: hsl(244, 38%, 16%);
+
+    --SoftViolet: hsl(277, 64%, 61%);
+
+    --SolidWhite: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--VeryDarkBlue-Main);
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+}
+
+#main {
+    /* This is a reminder to the Bryant of the past for what he did here. It was 5 hours Bryant. 5 hours. */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-section {
+    background: var(--DarkDesaturatedBlue);
+    border-radius: 7px;
+
+    width: 925px;
+    height: 372px;
+
+    margin: 150px 0 100px 0;
+
+    display: flex;
+}
+
+#info-container {
+    width: 50%;
+
+    padding: 40px 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info-container h1 {
+    color: var(--SolidWhite);
+    font-size: 30px;
+    font-weight: 700;
+
+    width: 340px;
+
+    margin: 20px 0 0 0;
+}
+
+#info-container h1 span {
+    color: var(--SoftViolet);
+}
+
+#description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+    width: 330px;
+    margin: 25px 35px 60px 25px;
+}
+
+#numbers-info {
+    width: 85%;
+    margin: 0 40px 0 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    color: var(--SolidWhite);
+    font-size: 20px;
+}
+
+.text-stats {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+
+    margin: 5px 0 0 0;
+}
+
+#img-cont {
+    background: hsla(288, 100%, 49%, 0.431);
+    border-radius: 0 7px 7px 0;
+}
+
+#desktop-header {
+    border-radius: 0 7px 7px 0;
+    
+    height: 100%;
+
+    opacity: 0.43;
+}
+
+#mobile-header {
+    display: none;
+}
+
+.attribution {
+    color: var(--SolidWhite);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Tablet config */
+
+@media (max-width: 900px) {
+    #info-section {
+        width: 400px;
+        height: auto;
+
+        margin: 20px 0 20px 0;
+        padding: 0 0 20px 0;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "image"
+                             "text";
+
+        justify-items: center;
+        align-content: center;
+    }
+
+    #info-container {
+        width: 90%;
+        height: fit-content;
+
+        padding: 0;
+    }
+
+    #info-container h1 {
+        font-size: 27px;
+
+        width: 100%;
+        
+        margin: 35px 0 0 0;
+
+        text-align: center;
+    }
+
+    #description {
+        width: 85%;
+        margin: 20px 35px 25px 25px;
+        text-align: center;
+    }
+
+    #numbers-info {
+        width: 100%;
+        height: 220px;
+
+        margin: 0;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-cont {
+        align-items: center;
+    }
+
+    #img-cont {
+        grid-area: image;
+        border-radius: 7px 7px 0 0;
+        
+        width: 400px;
+        height: 260px;
+    }
+
+    #mobile-header {
+        border-radius: 7px 7px 0 0;
+        opacity: 0.43;
+
+        width: 400px;
+        height: 260px;
+
+        display: block;
+    }
+
+    #desktop-header {
+        display: none;
+    }
+}
+
+/* Mobile config */
+
+@media (max-width: 600px) {
+    #info-section {
+        width: 300px;
+        height: auto;
+
+        margin: 20px 0 20px 0;
+        padding: 0 0 20px 0;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "image"
+                             "text";
+
+        justify-items: center;
+        align-content: center;
+    }
+
+    #info-container {
+        width: 90%;
+        height: fit-content;
+
+        padding: 0;
+    }
+
+    #info-container h1 {
+        font-size: 27px;
+
+        width: 100%;
+        
+        margin: 35px 0 0 0;
+
+        text-align: center;
+    }
+
+    #description {
+        width: 85%;
+        margin: 20px 35px 25px 25px;
+        text-align: center;
+    }
+
+    #numbers-info {
+        width: 100%;
+        height: 220px;
+
+        margin: 0;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-cont {
+        align-items: center;
+    }
+
+    #img-cont {
+        grid-area: image;
+        border-radius: 7px 7px 0 0;
+        
+        width: 300px;
+        height: 220px;
+    }
+
+    #mobile-header {
+        border-radius: 7px 7px 0 0;
+        opacity: 0.43;
+
+        width: 300px;
+        height: 220px;
+
+        display: block;
+    }
+
+    #desktop-header {
+        display: none;
+    }
+}

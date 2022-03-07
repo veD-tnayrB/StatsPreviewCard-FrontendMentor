@@ -29,12 +29,12 @@ body {
 
 #info-section {
     background: var(--DarkDesaturatedBlue);
-    border-radius: 7px;
+    border-radius: 10px;
 
-    width: 925px;
-    height: 372px;
+    width: 1100px;
+    height: 438px;
 
-    margin: 150px 0 100px 0;
+    margin: 195px 0 100px 0;
 
     display: flex;
 }
@@ -42,19 +42,18 @@ body {
 #info-container {
     width: 50%;
 
-    padding: 40px 28px;
+    padding: 48px 100px 0 70px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #info-container h1 {
     color: var(--SolidWhite);
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
 
-    width: 340px;
 
     margin: 20px 0 0 0;
 }
@@ -66,38 +65,37 @@ body {
 #description {
     color: hsla(0, 0%, 100%, 0.75);
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
 
-    width: 330px;
-    margin: 25px 35px 60px 25px;
+    margin: 25px 20px 60px 0;
 }
 
 #numbers-info {
-    width: 85%;
-    margin: 0 40px 0 0;
+    width: 88%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .info-cont {
     display: flex;
+    justify-self: flex-start;
     flex-direction: column;
 }
 
 .stats {
     color: var(--SolidWhite);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .text-stats {
     color: hsla(0, 0%, 100%, 0.6);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
 
-    margin: 5px 0 0 0;
+    margin: 8px 0 0 0;
 }
 
 #img-cont {

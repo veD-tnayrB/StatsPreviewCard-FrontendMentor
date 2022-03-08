@@ -29,13 +29,12 @@ body {
 
 #info-section {
     background: var(--DarkDesaturatedBlue);
-    border-radius: 10px;
+    border-radius: 8px;
 
     width: 1100px;
-    height: 438px;
+    height: 446px;
 
-    margin: 195px 0 100px 0;
-
+    margin: 178px 0 100px 0;
     display: flex;
 }
 
@@ -99,11 +98,12 @@ body {
 }
 
 #img-cont {
-    background: hsla(288, 100%, 49%, 0.431);
+    background: hsla(286, 100%, 50%, 0.486);
     border-radius: 0 7px 7px 0;
 }
 
 #desktop-header {
+    object-fit: cover;
     border-radius: 0 7px 7px 0;
     
     height: 100%;

@@ -72,6 +72,7 @@ body {
 
 #numbers-info {
     width: 88%;
+    margin: 20px 0 0 0;
 
     display: flex;
     justify-content: space-between;
@@ -126,7 +127,7 @@ body {
 }
 
 /* Tablet config */
-
+/*
 @media (max-width: 900px) {
     #info-section {
         width: 400px;
@@ -204,9 +205,9 @@ body {
         display: none;
     }
 }
-
+*/
 /* Mobile config */
-
+/*
 @media (max-width: 600px) {
     #info-section {
         width: 300px;
@@ -284,3 +285,4 @@ body {
         display: none;
     }
 }
+*/
